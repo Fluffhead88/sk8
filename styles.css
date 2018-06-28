@@ -8,21 +8,30 @@
 
 body {
   font-family: Helvetica, arial, sans-serif;
-  /* background-image: url(images/bg.png) */
+  background: url(images/bg.jpg);
+  background-size: cover;
 }
 
 img {
   width: 100%;
 }
 
-.nav {
-  background-color: red;
+.nav_links {
+  background-color: #A63634;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo>row {
+  border: 5px white;
+}
+
+.cards {
+  background-color: white;
 }
 
 .sm_boards {
-  border: 0 none;
   display: inline-flex;
-  height: auto;
-  max-width: 10%;
-  vertical-align: middle;
+  background-color: white;
 }
