@@ -1,0 +1,28 @@
+/* @import url('./styles/_header.css'); */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  /* background-image: url(images/bg.png) */
+}
+
+img {
+  width: 100%;
+}
+
+.nav {
+  background-color: red;
+}
+
+.sm_boards {
+  border: 0 none;
+  display: inline-flex;
+  height: auto;
+  max-width: 10%;
+  vertical-align: middle;
+}
