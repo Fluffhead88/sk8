@@ -1,5 +1,3 @@
-/* @import url('./styles/_header.css'); */
-
 * {
   box-sizing: border-box;
 }
@@ -16,6 +14,12 @@ img {
   width: 100%;
 }
 
+.row {
+  margin-bottom: 10px;
+}
+
+/* color and alignment for 4 nav buttons at top of page */
+
 #nav a {
   background-color: #A63634;
   display: inline-block;
@@ -24,16 +28,29 @@ img {
   color: white;
 }
 
+/* overflow class for nested pictures */
+
+.overflow {
+  overflow: -webkit-paged-x;
+}
+
+/* position class for pictures */
+
 .relative {
   position: relative;
 }
+
+/* puts logo on top of image */
 
 .logo {
   position: absolute;
   z-index: 20;
   width: 30vw;
   min-width: 200px;
+  top: 130px;
 }
+
+/* grid on top of image  */
 
 .grid {
   position: relative;
@@ -42,13 +59,18 @@ img {
   opacity: .5;
 }
 
+/* image for logo */
+
 #top_image {
   overflow: hidden;
   background: url(images/top-image.png) 25% 35% no-repeat;
 }
 
+/* background for articles */
+
 #sk8_news article {
   background: white;
+  padding: 10px;
 }
 
 #skateboarders img {
@@ -59,14 +81,76 @@ img {
   color: white;
 }
 
+/* positioning and styling for skateboarder images  */
+
+.skateboarder_Tommy {
+  height: 100%
+}
+
+.skateboarder_Tommy img {
+  height: 100%;
+  width: 253%;
+  transform: translateX(-50%);
+}
+
+.skateboarder_Tommy img, .skateboarder_Steve img {
+  position: absolute;
+  left: 0;
+}
+
+.skateboarder_Tommy span {
+  display: flex;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.skateboarder_Steve span {
+  display: flex;
+  text-align: center;
+  position: relative;
+  top: 173px;
+  right: -163px;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.skateboarder_Rodney span {
+  display: flex;
+  text-align: center;
+  position: relative;
+  top: -108px;
+  right: -21px;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.skateboarder_Lance span {
+  display: flex;
+  text-align: center;
+  position: relative;
+  top: -108px;
+  right: -21px;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+/* styling for row of skateboards */
+
 #skateboards {
   background-color: white;
 }
 
 #skateboards>div {
-  padding: 15px;
+  padding: 20px;
+  width: 100%
 }
+
+/* styling for contact box at bottom */
 
 #contact_us {
   background-color: white;
+  padding: 15px;
 }
