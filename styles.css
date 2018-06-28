@@ -16,22 +16,57 @@ img {
   width: 100%;
 }
 
-.nav_links {
+#nav a {
   background-color: #A63634;
-  color: white;
+  display: inline-block;
+  width: 100%;
   text-align: center;
-  padding: 10px;
+  color: white;
 }
 
-.logo>row {
-  border: 5px white;
+.relative {
+  position: relative;
 }
 
-.cards {
+.logo {
+  position: absolute;
+  z-index: 20;
+  width: 30vw;
+  min-width: 200px;
+}
+
+.grid {
+  position: relative;
+  z-index: 10;
+  height: 250px;
+  opacity: .5;
+}
+
+#top_image {
+  overflow: hidden;
+  background: url(images/top-image.png) 25% 35% no-repeat;
+}
+
+#sk8_news article {
+  background: white;
+}
+
+#skateboarders img {
+  border: solid 5px white;
+}
+
+#skateboarders>div {
+  color: white;
+}
+
+#skateboards {
   background-color: white;
 }
 
-.sm_boards {
-  display: inline-flex;
+#skateboards>div {
+  padding: 15px;
+}
+
+#contact_us {
   background-color: white;
 }
